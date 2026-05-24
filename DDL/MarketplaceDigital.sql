@@ -32,18 +32,20 @@ CREATE TABLE produk(
  stok	INT NOT NULL
 );
 
--- ALTER TABLE produk DROP COLUMN nama_produk;
+
 ALTER TABLE produk ADD COLUMN nama_produk VARCHAR(70) NOT NULL AFTER id;
 
 SELECT * FROM produk;
 
 -- ISI TABLE produk 
 INSERT INTO produk(nama_produk, id_kategori, harga_produk, stok) VALUES
-('Paket Template Desain Feed Sosial Media', 1, 20000, 5 ),('E-Book Premium', 2, 10000, 0 ),
+('Paket Template Desain Feed Sosial Media', 1, 20000, 5 ),('Paket Desain Sosial Media', 1, 25000, 6 ), ('Paket Desain', 1, 15000, 2 ), ('Paket Desain sederhana', 1, 10000, 4 ),
+('E-Book Premium', 2, 10000, 0 ),
 ('Preset Lightroom & Filter Foto', 3, 150000, 6 ), ('Digital Planner / Jurnal Siap Cetak', 4, 50000, 2),
 ('Font dan Aset Grafis Premium', 5, 300000, 7 ), ('Template Notion / Spreadsheet Akuntansi', 6, 350000, 10 ),
 ('Video Stock Footage & Sound Effect', 7, 400000, 4 ), ('Plugin atau Tema Website (WordPress/CMS)', 8, 200000, 0 ),
 ('Kursus Online / Video Tutorial Eksklusif', 9, 600000, 4 ), ('Akses ke Private Community / Membership Bulanan', 10, 2000000, 8 );
+
 
 
 -- TABLE produk-kategori 

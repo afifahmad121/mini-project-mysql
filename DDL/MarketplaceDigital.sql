@@ -48,6 +48,7 @@ INSERT INTO produk(nama_produk, id_kategori, harga_produk, stok) VALUES
 
 
 
+
 -- TABLE produk-kategori 
 CREATE TABLE produk_kategori(
  id INT AUTO_INCREMENT PRIMARY KEY,
